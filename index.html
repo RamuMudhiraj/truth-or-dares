@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Truth or Dare</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>🎯 Spin the Bottle</h1>
+
+<div class="controls">
+  <input type="text" id="playerInput" placeholder="Enter player name">
+  <button onclick="addPlayer()">Add Player</button>
+</div>
+
+<div class="circle" id="playerCircle"></div>
+
+<div class="bottle-container">
+  <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" id="bottle">
+</div>
+
+<button id="spinBtn" onclick="spinBottle()">SPIN</button>
+<br>
+<br>
+
+<div class="actions">
+  <button id="truthBtn" disabled onclick="goToPage('truth.html')">Truth</button>
+  <button id="dareBtn" disabled onclick="goToPage('dare.html')">Dare</button>
+</div>
+<br>
+
+<button onclick="resetGame()">Reset</button>
+
+<br><br><br><br><br>
+
+<script src="script.js"></script>
+</body>
+</html>
